@@ -1,0 +1,111 @@
+.form-section {
+    padding: 2rem 6rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+
+}
+
+.form-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    position: relative;
+    height: 60vh;
+    
+}
+
+form {
+    width: 100%; 
+    max-width: 800px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.input-control {
+    
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.input-control input {
+    width: 350px;
+    max-width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-control input:focus-visible {
+    border: 1px solid red;
+}
+
+.two-col--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.two-col--grid input {
+    width: 100%; 
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    .two-col--grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+.form-card--container {
+    position: absolute;
+    bottom: -50px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 90%; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    margin-bottom: -7rem;
+}
+
+
+@media (max-width:998px) {
+    .form-section {
+        padding: 1rem;
+    }
+    .form-card--container{
+        position: static;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
+.input-control input{
+    width: 100%;
+}
+.form-section .container{
+    height: max-content;
+}
+}

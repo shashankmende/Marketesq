@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  font-size: 62.5%; /* Default font size for larger screens (16px = 1rem) */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Reusable CSS */
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.9rem;
+}
+
+button {
+  padding: 1rem 2.2rem;
   color: white;
+  background-image: linear-gradient(to right, #03254c, #1167b1);
+  font-weight: 500;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Adjust font-size for smaller screens */
+@media (max-width: 768px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  :root {
+    font-size: 50%; /* 50% of the default font size, which means 8px = 1rem */
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 3.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjust subtitle size */
+  }
+
+  p {
+    font-size: 1.6rem; /* Adjust paragraph size */
+  }
+
+  button {
+    font-size: 1.8rem; /* Adjust button font size */
+  }
+}
+
+/* Adjust font-size for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+
+  :root {
+    font-size: 40%; /* 40% of the default font size, which means 6.4px = 1rem */
+  }
+
+  h1 {
+    font-size: 3rem; /* Adjust heading size for very small screens */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust subtitle size */
+  }
+
+  p {
+    font-size: 1.4rem; /* Adjust paragraph size */
+  }
+
+  button {
+    font-size: 1.6rem; /* Adjust button font size */
+  }
+}
+
+/* Optional: For very large screens */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 75%; /* 12px = 1rem */
+  }
+
+  h1 {
+    font-size: 6rem; /* Large heading for big screens */
+  }
+
+  h2 {
+    font-size: 3rem; /* Larger subtitle size */
+  }
+
+  p {
+    font-size: 2rem; /* Larger paragraph text */
+  }
+
+  button {
+    font-size: 2.4rem; /* Larger button font size */
   }
 }

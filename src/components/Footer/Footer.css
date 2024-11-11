@@ -1,0 +1,9 @@
+
+footer {
+    background-color: #dfdddd;
+    padding: 3rem 6rem;
+}
+
+.footer-left--container > p, button{
+    margin-top: 1.5rem;
+}

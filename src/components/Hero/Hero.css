@@ -1,0 +1,115 @@
+
+
+
+.hero-section {
+    padding: 2rem 6rem;
+    font-family: "urbanist";
+    
+    position: relative;
+    display: flex;flex-direction: column;
+    align-items:center;
+    margin-bottom: 5rem;
+    
+}
+
+.hero-section .container {
+    background-color: #F5F5F5;
+    
+    width: 100%;
+    padding: 10rem;
+    position: relative;
+
+}
+
+.hero-section .icons-container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-two--cols{
+    grid-template-columns: 50% 50%;
+}
+
+.hero-img--container {
+    
+    height: 350px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.hero-section-1--div{
+    line-height: 1.5;
+}
+
+.hero-img--container img{
+    
+    aspect-ratio: 1;
+    height: inherit;
+    right: 0;
+    top: 0;
+}
+
+
+.hero-section-card-container {
+    position: absolute;
+    bottom: -70px;
+    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+    
+}
+
+@media (max-width:1200px) {
+    .grid-two--cols{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:998px) {
+    .hero-section{
+        margin-bottom: 1rem;
+        
+    }
+    .hero-section ,.hero-section .container {
+        padding: 1rem;
+        font-size: 2rem;
+        
+        
+
+    }
+    
+    .hero-img--container {
+        position: static;
+        
+        order: 1;
+    }
+    .hero-section .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .hero-section-1--div {
+        order: 2;
+        padding: 1rem;
+    }
+    .hero-section-card-container {
+        position: static;
+        padding: 1rem;
+        
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,80 @@
+.section-about {
+    padding: 2rem 6rem;
+    margin-bottom: 5rem;
+}
+
+.section-about>h2 {
+    text-align: center;
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.section-about .grid {
+    display: grid;
+}
+
+.grid-three-cools {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.about-1--div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    width: 100%;
+    max-height: max-content;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.about-1--div p {
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    word-spacing: 2px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.profile-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.about-2--div {
+    padding: 0;
+}
+
+.river-img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.about-3--div {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.profile-container h2 {
+    text-align: left;
+}
+
+@media (max-width: 1068px) {
+    .section-about{
+        padding: 1rem;
+    }
+    .grid-three-cools {
+        grid-template-columns: 100%;
+    }
+}

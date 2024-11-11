@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  :root{
+    font-size: 62.5%;
+  }
+  
+
+  /* reusable css */
+  h1{
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+  }
+  h2{
+  
+    font-family: "Urbanist", sans-serif;
+    font-size: 2.4rem;
+  
+  }
+  p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.9rem;
+  
+  }
+  
+  button {
+    padding: 1rem 2.2rem;
+    color: white;
+    background-image: linear-gradient(to right,#03254c,#1167b1);
+    font-weight: 500;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    cursor: pointer;
+  }
